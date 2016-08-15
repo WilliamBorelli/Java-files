@@ -1,32 +1,36 @@
-     package aulavetor2;
+   package aulavetor2;
 
 import java.util.Scanner;
 
 public class AulaVetor2 {
 
-    static int idade[]=new int[10];
+   public int idade[];
    
+   AulaVetor2(){
+          idade=new int[10];
+   }
     public static void main(String[] args) {
-       
-           setvetor();
-        System.out.println("-------"); 
-           imprimir();
+     
+        AulaVetor2 v=new AulaVetor2();
+     
+           v.setvetor();
+        
+           v.imprimir();
            
-           ordenar();
-    System.out.println("-------");
-       
-       imprimir();
+           v.ordenar();
+        
+           v.imprimir();
         
     }
   
-    public static void imprimir()
+    public void imprimir()
     {
        
         for(int i=0; i < idade.length ; i++)
             System.out.println(idade[i]);
     }
     
-    public static void ordenar()
+    public void ordenar()
     {
         for(int i=0; i < idade.length ; i++)
         for(int j=i+1; j < idade.length ; j++)
@@ -40,7 +44,7 @@ public class AulaVetor2 {
         }
     }
         
-        public static void setvetor(){
+        public  void setvetor(){
         
         Scanner leitura=new Scanner(System.in);
       
