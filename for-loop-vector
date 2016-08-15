@@ -1,4 +1,4 @@
-   package aulavetor2;
+  package aulavetor2;
 
 import java.util.Scanner;
 
@@ -55,5 +55,19 @@ public class AulaVetor2 {
          }
         
     }
+        public void setPosicao()
+
+        {
+        Scanner leitura=new Scanner(System.in);
+        System.out.println("Digite a posição do vetor entre 0 e 9");
+        int posicao = leitura.nextInt();
+
+        System.out.println("Digite o valor da posição");
+        int valor=leitura.nextInt();
+
+        idade[posicao]=valor;
+
+        }
     
 }
+
